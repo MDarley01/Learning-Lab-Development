@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Periodic Table View Controller-->
+        <scene sceneID="Vgn-qT-8s9">
+            <objects>
+                <viewController id="hpY-7i-Fed" customClass="PeriodicTableViewController" customModule="Basic_Chem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5d1-uQ-j4z"/>
+                        <viewControllerLayoutGuide type="bottom" id="4dh-58-9Y1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h15-yL-pzP">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="AtomicNumberLabel" text="Atomic Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bck-V0-1SJ">
+                                <rect key="frame" x="20" y="28" width="201" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="AtomicNumberLabel" destination="bck-V0-1SJ" id="8Yb-m4-rAt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAp-3x-BbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-956" y="-471"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kq4-7i-24d">
+            <objects>
+                <viewController id="pbR-6W-G4h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVQ-74-KQH"/>
+                        <viewControllerLayoutGuide type="bottom" id="t4i-mJ-Rm1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q4u-tr-pCh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ShinyPeriodicTable" translatesAutoresizingMaskIntoConstraints="NO" id="14h-Pf-aPJ">
+                                <rect key="frame" x="0.0" y="42" width="1024" height="706"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="top" secondItem="cVQ-74-KQH" secondAttribute="bottom" id="6k7-Zm-SyU"/>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="height" secondItem="q4u-tr-pCh" secondAttribute="height" id="cP4-Bi-f81"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="14h-Pf-aPJ" secondAttribute="trailing" constant="-20" id="g9u-3F-aDJ"/>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="leading" secondItem="q4u-tr-pCh" secondAttribute="leadingMargin" constant="-20" id="zaA-KG-01e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCM-hh-iwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1373.4375" y="302.34375"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient1" translatesAutoresizingMaskIntoConstraints="NO" id="F53-eO-fRc">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="chemistry menu" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-AQ-miv">
+                                <rect key="frame" x="20" y="49" width="728" height="927"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDv-j2-UZI">
+                                <rect key="frame" x="406" y="632" width="294" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="FIq-Az-nTv" kind="showDetail" action="showViewController:sender:" id="EFh-bp-rNg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0r-QT-yXj">
+                                <rect key="frame" x="72" y="396" width="294" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="pbR-6W-G4h" kind="show" id="rCN-LQ-hyX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-gH-B1r">
+                                <rect key="frame" x="390" y="97" width="294" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="NMm-cZ-A66" kind="show" id="aIV-ds-O2T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F53-eO-fRc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="3gX-l4-4Mg"/>
+                            <constraint firstItem="F53-eO-fRc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="INg-R2-kiT"/>
+                            <constraint firstItem="2Mh-AQ-miv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iud-UL-TEQ"/>
+                            <constraint firstItem="F53-eO-fRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ljV-NR-zka"/>
+                            <constraint firstItem="F53-eO-fRc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nHN-FG-pRN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25.78125" y="40.4296875"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="uKA-BK-fDs">
+            <objects>
+                <viewController id="FIq-Az-nTv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="653-yC-W8x"/>
+                        <viewControllerLayoutGuide type="bottom" id="iJZ-rb-ebZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NDo-Se-PwY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gradient-2" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-CT-B5B">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu 2" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-Jt-JDi">
+                                <rect key="frame" x="47" y="20" width="675" height="1039"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1000" id="0dR-iu-ALH"/>
+                                    <constraint firstAttribute="width" secondItem="BdX-Jt-JDi" secondAttribute="height" multiplier="675:1000" id="Qnf-c8-qef"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gN9-CT-B5B" firstAttribute="centerY" secondItem="BdX-Jt-JDi" secondAttribute="centerY" id="7BC-vC-DN7"/>
+                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="centerY" secondItem="NDo-Se-PwY" secondAttribute="centerY" id="8Sw-FT-VgN"/>
+                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="width" secondItem="gN9-CT-B5B" secondAttribute="height" multiplier="675:1024" id="CLw-HI-li3"/>
+                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="centerX" secondItem="NDo-Se-PwY" secondAttribute="centerX" id="Hcp-G0-dXf"/>
+                            <constraint firstItem="gN9-CT-B5B" firstAttribute="width" secondItem="NDo-Se-PwY" secondAttribute="width" id="a7E-ny-i5U"/>
+                            <constraint firstItem="gN9-CT-B5B" firstAttribute="height" secondItem="NDo-Se-PwY" secondAttribute="height" id="cfL-4k-gzz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="3kb-qn-kYf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yrd-Tc-QGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.5" y="468.74999999999994"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rLY-Po-Vbi">
+            <objects>
+                <viewController id="NMm-cZ-A66" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="12q-l9-b6g"/>
+                        <viewControllerLayoutGuide type="bottom" id="22S-fO-LlW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xya-LW-g6z">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient3" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-UW-plM">
+                                <rect key="frame" x="33" y="0.0" width="702" height="1024"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu alt" translatesAutoresizingMaskIntoConstraints="NO" id="nY4-uK-Z5R">
+                                <rect key="frame" x="33" y="2" width="702" height="1021"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="686" id="OBr-JF-fgw"/>
+                                    <constraint firstAttribute="width" secondItem="nY4-uK-Z5R" secondAttribute="height" multiplier="686:921" id="Xk5-DI-PNh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="height" secondItem="xya-LW-g6z" secondAttribute="height" id="0hz-3e-4XU"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerY" secondItem="3WW-UW-plM" secondAttribute="centerY" id="Dcj-DZ-dlA"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="height" secondItem="3WW-UW-plM" secondAttribute="height" id="EL3-Ok-kEh"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="width" secondItem="3WW-UW-plM" secondAttribute="height" multiplier="351:512" id="bTR-uH-BW8"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="centerY" secondItem="xya-LW-g6z" secondAttribute="centerY" id="clt-40-Xtw"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="width" secondItem="xya-LW-g6z" secondAttribute="width" id="mcf-EN-MpP"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="width" secondItem="3WW-UW-plM" secondAttribute="width" id="pbl-iC-qo1"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerY" secondItem="3WW-UW-plM" secondAttribute="centerY" id="pjd-Cd-KAR"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="centerX" secondItem="xya-LW-g6z" secondAttribute="centerX" id="rzm-fh-Vgj"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerX" secondItem="3WW-UW-plM" secondAttribute="centerX" id="ukL-bl-0Qx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Unh-8w-91T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006.25" y="-373.2421875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ShinyPeriodicTable" width="3840" height="2160"/>
+        <image name="chemistry menu" width="792" height="996"/>
+        <image name="chemistry menu 2" width="1701" height="2713"/>
+        <image name="chemistry menu alt" width="1729" height="2662"/>
+        <image name="gradient-2" width="1440" height="1920"/>
+        <image name="gradient1" width="1440" height="1920"/>
+        <image name="gradient3" width="1440" height="1920"/>
+    </resources>
+</document>
