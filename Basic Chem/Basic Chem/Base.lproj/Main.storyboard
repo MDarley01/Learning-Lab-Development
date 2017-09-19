@@ -11,20 +11,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Periodic Table View Controller-->
-        <scene sceneID="Vgn-qT-8s9">
+        <!--Element Infor View-->
+        <scene sceneID="EBz-pE-HIq">
             <objects>
-                <viewController id="hpY-7i-Fed" customClass="PeriodicTableViewController" customModule="Basic_Chem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YqP-Oq-bkG" customClass="elementInforView" customModule="Basic_Chem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5d1-uQ-j4z"/>
-                        <viewControllerLayoutGuide type="bottom" id="4dh-58-9Y1"/>
+                        <viewControllerLayoutGuide type="top" id="RR7-LG-TNv"/>
+                        <viewControllerLayoutGuide type="bottom" id="qFI-kp-KT1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h15-yL-pzP">
+                    <view key="view" contentMode="scaleToFill" id="YDG-rq-gWe">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="AtomicNumberLabel" text="Atomic Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bck-V0-1SJ">
-                                <rect key="frame" x="20" y="28" width="201" height="183"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z4-iL-pfs">
+                                <rect key="frame" x="430" y="241" width="273" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uG-gR-Xmm">
+                                <rect key="frame" x="89" y="64" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="pbR-6W-G4h" kind="show" id="dN2-OF-wzh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOt-z1-i5d">
+                                <rect key="frame" x="85" y="178" width="268" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -34,17 +46,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="AtomicNumberLabel" destination="bck-V0-1SJ" id="8Yb-m4-rAt"/>
+                        <outlet property="elementImageView" destination="4Z4-iL-pfs" id="kpt-fO-hD8"/>
+                        <outlet property="elementInforLabel" destination="JOt-z1-i5d" id="YrL-Sl-xny"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SAp-3x-BbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QaJ-of-cIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-956" y="-471"/>
+            <point key="canvasLocation" x="-2100" y="301.7578125"/>
         </scene>
-        <!--View Controller-->
+        <!--Element Tabel View-->
         <scene sceneID="Kq4-7i-24d">
             <objects>
-                <viewController id="pbR-6W-G4h" sceneMemberID="viewController">
+                <viewController id="pbR-6W-G4h" customClass="elementTabelView" customModule="Basic_Chem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cVQ-74-KQH"/>
                         <viewControllerLayoutGuide type="bottom" id="t4i-mJ-Rm1"/>
@@ -56,6 +69,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ShinyPeriodicTable" translatesAutoresizingMaskIntoConstraints="NO" id="14h-Pf-aPJ">
                                 <rect key="frame" x="0.0" y="42" width="1024" height="706"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVF-lQ-lPH" userLabel="H">
+                                <rect key="frame" x="13" y="55" width="48" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hAction:" destination="pbR-6W-G4h" eventType="touchUpInside" id="U16-iq-1Q1"/>
+                                    <segue destination="YqP-Oq-bkG" kind="show" id="RIO-wG-l6v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN5-gY-Xzj">
+                                <rect key="frame" x="115" y="31" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="TPG-Dc-oBA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,9 +114,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient1" translatesAutoresizingMaskIntoConstraints="NO" id="F53-eO-fRc">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="chemistry menu" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-AQ-miv">
-                                <rect key="frame" x="20" y="49" width="728" height="927"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDv-j2-UZI">
                                 <rect key="frame" x="406" y="632" width="294" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,6 +135,9 @@
                                     <segue destination="NMm-cZ-A66" kind="show" id="aIV-ds-O2T"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="chemistry menu" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-AQ-miv">
+                                <rect key="frame" x="20" y="77" width="728" height="927"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -140,12 +169,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu 2" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-Jt-JDi">
-                                <rect key="frame" x="47" y="20" width="675" height="1039"/>
+                                <rect key="frame" x="47" y="0.0" width="675" height="1039"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1000" id="0dR-iu-ALH"/>
                                     <constraint firstAttribute="width" secondItem="BdX-Jt-JDi" secondAttribute="height" multiplier="675:1000" id="Qnf-c8-qef"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-je-ZXS">
+                                <rect key="frame" x="241" y="577" width="287" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="NQL-Ys-yIq" kind="show" id="liV-aH-bWP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,7 +199,97 @@
             </objects>
             <point key="canvasLocation" x="962.5" y="468.74999999999994"/>
         </scene>
+        <!--FLASHCARDS-->
+        <scene sceneID="yvX-Ff-fZe">
+            <objects>
+                <tableViewController id="t2c-tq-Jkl" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M31-hU-Fvv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLASHCARD TERM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XBM-tc-2TF">
+                            <rect key="frame" x="0.0" y="72" width="768" height="894"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3jk-Kr-e77">
+                                <rect key="frame" x="0.0" y="28" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3jk-Kr-e77" id="txr-e9-VPY">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t2c-tq-Jkl" id="6Vs-t2-CSm"/>
+                            <outlet property="delegate" destination="t2c-tq-Jkl" id="jA5-Fz-6wC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="FLASHCARDS" id="6cU-nX-QFH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="iiD-Jj-dDF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zer-2b-Mrp">
+                                <rect key="frame" x="578" y="7" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DEFINITION"/>
+                            </button>
+                            <connections>
+                                <segue destination="cH5-Zv-5AR" kind="show" id="np3-5h-lxu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysh-cy-HNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497.65625" y="478.71093749999994"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="jaa-Rd-s5z">
+            <objects>
+                <viewController id="cH5-Zv-5AR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nNP-YU-yQr"/>
+                        <viewControllerLayoutGuide type="bottom" id="dxU-2W-m6l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDB-4e-qta">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lj-hg-j6a">
+                                <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="DEFINITION" id="cAM-rW-v3q"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlY-wL-ZOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3280" y="479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Ad-uC-Tts">
+            <objects>
+                <navigationController id="NQL-Ys-yIq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WQq-X0-MHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="t2c-tq-Jkl" kind="relationship" relationship="rootViewController" id="tvX-HK-I8H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpw-uW-EcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="479"/>
+        </scene>
+        <!--Learning Resources-->
         <scene sceneID="rLY-Po-Vbi">
             <objects>
                 <viewController id="NMm-cZ-A66" sceneMemberID="viewController">
@@ -179,7 +305,7 @@
                                 <rect key="frame" x="33" y="0.0" width="702" height="1024"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu alt" translatesAutoresizingMaskIntoConstraints="NO" id="nY4-uK-Z5R">
-                                <rect key="frame" x="33" y="2" width="702" height="1021"/>
+                                <rect key="frame" x="69" y="64" width="630" height="952"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="686" id="OBr-JF-fgw"/>
                                     <constraint firstAttribute="width" secondItem="nY4-uK-Z5R" secondAttribute="height" multiplier="686:921" id="Xk5-DI-PNh"/>
@@ -200,6 +326,9 @@
                             <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerX" secondItem="3WW-UW-plM" secondAttribute="centerX" id="ukL-bl-0Qx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Learning Resources" id="Wsx-F7-EBi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AAe-Zx-hZI"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Unh-8w-91T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,4 +344,7 @@
         <image name="gradient1" width="1440" height="1920"/>
         <image name="gradient3" width="1440" height="1920"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rCN-LQ-hyX"/>
+    </inferredMetricsTieBreakers>
 </document>
