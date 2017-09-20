@@ -15,6 +15,10 @@
 		E46F404C1F6B70A700EBCB86 /* elementDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F404B1F6B70A700EBCB86 /* elementDictionary.swift */; };
 		E46F404E1F6B70ED00EBCB86 /* elementInforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F404D1F6B70ED00EBCB86 /* elementInforView.swift */; };
 		E46F40501F6B72A600EBCB86 /* elementTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F404F1F6B72A600EBCB86 /* elementTabelView.swift */; };
+		F066FE1D1F723688006B982F /* Term controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066FE1C1F723688006B982F /* Term controller.swift */; };
+		F066FE1F1F723795006B982F /* DefinitonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066FE1E1F723795006B982F /* DefinitonController.swift */; };
+		F066FE211F723859006B982F /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066FE201F723859006B982F /* Deck.swift */; };
+		F066FE231F723862006B982F /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066FE221F723862006B982F /* Flashcard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E46F404B1F6B70A700EBCB86 /* elementDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elementDictionary.swift; sourceTree = "<group>"; };
 		E46F404D1F6B70ED00EBCB86 /* elementInforView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elementInforView.swift; sourceTree = "<group>"; };
 		E46F404F1F6B72A600EBCB86 /* elementTabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elementTabelView.swift; sourceTree = "<group>"; };
+		F066FE1C1F723688006B982F /* Term controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Term controller.swift"; sourceTree = "<group>"; };
+		F066FE1E1F723795006B982F /* DefinitonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitonController.swift; sourceTree = "<group>"; };
+		F066FE201F723859006B982F /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = "../../../Flashcards-end-2/Flashcards/Deck.swift"; sourceTree = "<group>"; };
+		F066FE221F723862006B982F /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flashcard.swift; path = "../../../Flashcards-end-2/Flashcards/Flashcard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				E44F5BD01F5504EA009BEEB4 /* AppDelegate.swift */,
 				E44F5BD21F5504EA009BEEB4 /* HomePageViewController.swift */,
 				E44F5BD41F5504EA009BEEB4 /* Main.storyboard */,
+				F066FE1E1F723795006B982F /* DefinitonController.swift */,
+				F066FE1C1F723688006B982F /* Term controller.swift */,
+				F066FE221F723862006B982F /* Flashcard.swift */,
+				F066FE201F723859006B982F /* Deck.swift */,
 				E44F5BD71F5504EA009BEEB4 /* Assets.xcassets */,
 				E44F5BD91F5504EA009BEEB4 /* LaunchScreen.storyboard */,
 				E44F5BDC1F5504EA009BEEB4 /* Info.plist */,
@@ -145,9 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F066FE1D1F723688006B982F /* Term controller.swift in Sources */,
+				F066FE1F1F723795006B982F /* DefinitonController.swift in Sources */,
 				E46F404E1F6B70ED00EBCB86 /* elementInforView.swift in Sources */,
 				E46F40501F6B72A600EBCB86 /* elementTabelView.swift in Sources */,
+				F066FE211F723859006B982F /* Deck.swift in Sources */,
 				E44F5BD31F5504EA009BEEB4 /* HomePageViewController.swift in Sources */,
+				F066FE231F723862006B982F /* Flashcard.swift in Sources */,
 				E46F404C1F6B70A700EBCB86 /* elementDictionary.swift in Sources */,
 				E44F5BD11F5504EA009BEEB4 /* AppDelegate.swift in Sources */,
 			);
