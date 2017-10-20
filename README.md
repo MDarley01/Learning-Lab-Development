@@ -1,7 +1,7 @@
 # Learning-Lab-Development
 Educational chemistry app for students in years 7-9
 
-Alright team 9 lessons remaining, We're almost Done!!
+Alright team 7 lessons remaining, We're almost Done!!
 
 Things That We Should Finish:
 
