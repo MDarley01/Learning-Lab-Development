@@ -15,7 +15,9 @@ Embed TextBooks and videos
 
 Finish Quizzes
 
-Add gradients to back of periodic table and flashcards.
+Add gradients to back of periodic table and flashcards
+
+Add the Elements to the periodic table.
 
 
 
