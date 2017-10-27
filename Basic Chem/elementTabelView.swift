@@ -13,6 +13,9 @@ class elementTabelView: UIViewController {
     var buttonPressed = String()
     
     
+    @IBAction func backToHomePage(_ sender: Any) {
+        buttonPressed = "HOME"
+    }
     
     
     override func viewDidLoad() {
@@ -28,8 +31,12 @@ class elementTabelView: UIViewController {
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let pdata: elementInforView = segue.destination as! elementInforView
-        pdata.labeltext = buttonPressed
+        if buttonPressed == "HOME"{
+            
+        }else{
+            let pdata: elementInforView = segue.destination as! elementInforView
+            pdata.labeltext = buttonPressed
+        }
     }
     
     @IBAction func hAction(_ sender: UIButton) {

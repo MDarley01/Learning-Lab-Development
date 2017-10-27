@@ -32,7 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="pbR-6W-G4h" kind="show" id="dN2-OF-wzh"/>
+                                    <segue destination="pbR-6W-G4h" kind="presentation" id="dN2-OF-wzh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOt-z1-i5d">
@@ -66,6 +66,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gradient5" translatesAutoresizingMaskIntoConstraints="NO" id="hPn-rM-eh0">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ShinyPeriodicTable" translatesAutoresizingMaskIntoConstraints="NO" id="14h-Pf-aPJ">
                                 <rect key="frame" x="0.0" y="42" width="1024" height="706"/>
                             </imageView>
@@ -74,30 +77,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="hAction:" destination="pbR-6W-G4h" eventType="touchUpInside" id="U16-iq-1Q1"/>
-                                    <segue destination="YqP-Oq-bkG" kind="show" id="RIO-wG-l6v"/>
+                                    <segue destination="YqP-Oq-bkG" kind="presentation" id="RIO-wG-l6v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN5-gY-Xzj">
-                                <rect key="frame" x="115" y="31" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGY-4c-oK8">
+                                <rect key="frame" x="118" y="20" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="TPG-Dc-oBA"/>
+                                    <action selector="backToHomePage:" destination="pbR-6W-G4h" eventType="touchUpInside" id="K65-RW-VvY"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GqD-ki-nEC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="width" secondItem="hPn-rM-eh0" secondAttribute="width" id="0SP-EN-Ckf"/>
                             <constraint firstItem="14h-Pf-aPJ" firstAttribute="top" secondItem="cVQ-74-KQH" secondAttribute="bottom" id="6k7-Zm-SyU"/>
                             <constraint firstItem="14h-Pf-aPJ" firstAttribute="height" secondItem="q4u-tr-pCh" secondAttribute="height" id="cP4-Bi-f81"/>
                             <constraint firstAttribute="trailingMargin" secondItem="14h-Pf-aPJ" secondAttribute="trailing" constant="-20" id="g9u-3F-aDJ"/>
+                            <constraint firstAttribute="height" secondItem="hPn-rM-eh0" secondAttribute="height" id="k4d-sU-hrL"/>
                             <constraint firstItem="14h-Pf-aPJ" firstAttribute="leading" secondItem="q4u-tr-pCh" secondAttribute="leadingMargin" constant="-20" id="zaA-KG-01e"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCM-hh-iwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1373.4375" y="302.34375"/>
+            <point key="canvasLocation" x="-1046.09375" y="252.53906249999997"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -118,21 +124,21 @@
                                 <rect key="frame" x="406" y="632" width="294" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="FIq-Az-nTv" kind="showDetail" action="showViewController:sender:" id="EFh-bp-rNg"/>
+                                    <segue destination="FIq-Az-nTv" kind="presentation" id="EFh-bp-rNg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0r-QT-yXj">
                                 <rect key="frame" x="72" y="396" width="294" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="pbR-6W-G4h" kind="show" id="rCN-LQ-hyX"/>
+                                    <segue destination="pbR-6W-G4h" kind="presentation" id="rCN-LQ-hyX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-gH-B1r">
                                 <rect key="frame" x="390" y="97" width="294" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="NMm-cZ-A66" kind="show" id="aIV-ds-O2T"/>
+                                    <segue destination="NMm-cZ-A66" kind="presentation" id="aIV-ds-O2T"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="chemistry menu" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-AQ-miv">
@@ -179,7 +185,7 @@
                                 <rect key="frame" x="241" y="601" width="287" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="KHB-VQ-saT" kind="show" id="OfH-0h-8Em"/>
+                                    <segue destination="KHB-VQ-saT" kind="presentation" id="OfH-0h-8Em"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9t-in-hdV">
@@ -187,7 +193,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="33E-nX-wvm"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="33E-nX-wvm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -219,29 +225,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flashcard term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-vW-vxJ">
-                                <rect key="frame" x="258" y="396" width="416" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient3" translatesAutoresizingMaskIntoConstraints="NO" id="6FW-yJ-nxX">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTs-Cb-uXw">
-                                <rect key="frame" x="512" y="51" width="66" height="30"/>
+                                <rect key="frame" x="288" y="336" width="192" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Definition"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Definition">
+                                    <color key="titleColor" red="1" green="0.92820870535714284" blue="0.59296875000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <segue destination="pyn-Ua-0Tj" kind="show" id="47Z-1v-0Zh"/>
+                                    <segue destination="pyn-Ua-0Tj" kind="presentation" id="47Z-1v-0Zh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK6-ce-BAV">
-                                <rect key="frame" x="114" y="51" width="34" height="30"/>
+                                <rect key="frame" x="20" y="28" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="FIq-Az-nTv" kind="show" id="oLC-K7-49d"/>
+                                    <segue destination="FIq-Az-nTv" kind="presentation" id="oLC-K7-49d"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flashcard Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-vW-vxJ">
+                                <rect key="frame" x="55" y="477" width="659" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.92941176470588238" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -265,19 +278,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient-2" translatesAutoresizingMaskIntoConstraints="NO" id="iCH-fa-mq8">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9IV-7X-fm1">
-                                <rect key="frame" x="20" y="95" width="728" height="30"/>
+                                <rect key="frame" x="20" y="459" width="728" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8w-sS-P0I">
-                                <rect key="frame" x="96" y="20" width="34" height="30"/>
+                                <rect key="frame" x="341" y="344" width="87" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="KHB-VQ-saT" kind="show" id="gIh-e6-Jad"/>
+                                    <segue destination="KHB-VQ-saT" kind="presentation" id="gIh-e6-Jad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -318,21 +336,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Gpk-sz-nhX"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Gpk-sz-nhX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t0-TS-lVr">
                                 <rect key="frame" x="256" y="213" width="221" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="ZTO-t6-R6S" kind="show" id="iFE-Tx-u1v"/>
+                                    <segue destination="ZTO-t6-R6S" kind="presentation" id="iFE-Tx-u1v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4I-6n-u8D">
                                 <rect key="frame" x="245" y="632" width="279" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="gG1-kW-Umq" kind="show" id="iMg-Ki-uyq"/>
+                                    <segue destination="gG1-kW-Umq" kind="presentation" id="iMg-Ki-uyq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -370,24 +388,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gradient1" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-Q6-dX4">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="768" id="FPs-OA-8ec"/>
+                                    <constraint firstAttribute="height" constant="1024" id="Kjb-Sl-vX3"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-I6-jLx">
+                                <rect key="frame" x="71" y="576" width="627" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-yN-pJN">
                                 <rect key="frame" x="26" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="NMm-cZ-A66" kind="show" id="IVG-KI-Vjf"/>
+                                    <segue destination="NMm-cZ-A66" kind="presentation" id="IVG-KI-Vjf"/>
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-FI-hPl" userLabel="V">
-                                <rect key="frame" x="71" y="58" width="627" height="358"/>
+                                <rect key="frame" x="71" y="92" width="627" height="358"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Introduction to Chemistry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kca-yJ-B7y">
+                                <rect key="frame" x="287" y="43" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elements and Atoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cw8-0E-m3E">
+                                <rect key="frame" x="306" y="535" width="157" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="V" destination="lFe-FI-hPl" id="MeY-pV-2Fa"/>
+                        <outlet property="V2" destination="UCo-I6-jLx" id="YV6-Uq-46d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7T-qR-DcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -406,28 +451,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is where the textbook info will be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUo-hO-yvk">
-                                <rect key="frame" x="241" y="168" width="287" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrK-aV-C8B">
                                 <rect key="frame" x="26" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="NMm-cZ-A66" kind="show" id="CZk-qp-y4g"/>
+                                    <segue destination="NMm-cZ-A66" kind="presentation" id="CZk-qp-y4g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUo-hO-yvk">
+                                <rect key="frame" x="-613" y="209" width="4908" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Chemistry is the scientific discipline involved with compounds composed of atoms, i.e. elements, and molecules, i.e. combinations of atoms: their composition, structure, properties, behavior and the changes they undergo during a reaction with other compounds.[1][2] Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds. There are four types of chemical bonds: covalent bonds, in which compounds share one or more electron(s); ionic bonds, in which a compound donates one or more electrons to another compound to produce ions: cations and anions; hydrogen bonds; and Van der Waals force bonds.
+
+Chemistry occupies an intermediate position in a hierarchy of the sciences by reductive level between physics and biology.[3] It is sometimes called the central science because it provides a foundation for understanding both basic and applied scientific disciplines at a fundamental level.[4] Examples include plant chemistry (botany), the formation of igneous rocks (geology), how atmospheric ozone is formed and how environmental pollutants are degraded (ecology), the properties of the soil on the moon (astrophysics), how medications work (pharmacology), and how to collect DNA evidence at a crime scene (forensics).
+
+The history of chemistry represents a time span from ancient history to the present. By 1000 BC, civilizations used technologies that would eventually form the basis of the various branches of chemistry. Examples include extracting metals from ores, making pottery and glazes, fermenting beer and wine, extracting chemicals from plants for medicine and perfume, rendering fat into soap, making glass, and making alloys like bronze. The protoscience of chemistry, alchemy, was unsuccessful in explaining the nature of matter and its transformations. However, by performing experiments and recording the results, alchemists set the stage for modern chemistry. The distinction began to emerge when a clear differentiation was made between chemistry and alchemy by Robert Boyle in his work The Sceptical Chymist (1661). While both alchemy and chemistry are concerned with matter and its transformations, chemists are seen as applying scientific method to their work. Chemistry is considered to have become an established science with the work of Antoine Lavoisier, who developed a law of conservation of mass that demanded careful measurement and quantitative observations of chemical phenomena. The history of chemistry is intertwined with the history of thermodynamics, especially through the work of Willard Gibbs.[5] Chemistry was preceded by its protoscience, alchemy, which is an intuitive but non-scientific approach to understanding the elements, compounds, and their interactions. It was unsuccessful in explaining the nature of matter and its transformations, but by performing experiments and recording the results, alchemists set the stage for modern chemistry. The distinction began to emerge when a clear differentiation between alchemy and chemistry was made by Robert Boyle in 1661: the application of the scientific method in chemistry was the crucial difference.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wU6-ce-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="-855"/>
+            <point key="canvasLocation" x="2235.9375" y="-939.25781249999989"/>
         </scene>
     </scenes>
     <resources>
@@ -438,12 +488,13 @@
         <image name="gradient-2" width="1440" height="1920"/>
         <image name="gradient1" width="1440" height="1920"/>
         <image name="gradient3" width="1440" height="1920"/>
+        <image name="gradient5" width="1440" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OfH-0h-8Em"/>
-        <segue reference="oLC-K7-49d"/>
-        <segue reference="CZk-qp-y4g"/>
-        <segue reference="Gpk-sz-nhX"/>
+        <segue reference="GqD-ki-nEC"/>
         <segue reference="dN2-OF-wzh"/>
+        <segue reference="CZk-qp-y4g"/>
+        <segue reference="gIh-e6-Jad"/>
+        <segue reference="oLC-K7-49d"/>
     </inferredMetricsTieBreakers>
 </document>

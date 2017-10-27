@@ -11,10 +11,13 @@ import UIKit
 class VideoViewController: UIViewController {
     @IBOutlet weak var V: UIWebView!
 
+    @IBOutlet weak var V2: UIWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getVideo(videoCode: "C0Z6tJdeQ_E")
+        getVideo(videoCode: "Rd4a1X3B61w")
+        getVideo(videoCode: "IFKnq9QM6_A")
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +32,7 @@ class VideoViewController: UIViewController {
     {
         let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
         V.loadRequest(URLRequest(url: url!))
+        V2.loadRequest(URLRequest(url: url!))
         
     }
 
