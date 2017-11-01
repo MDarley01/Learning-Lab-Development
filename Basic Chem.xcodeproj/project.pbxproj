@@ -34,8 +34,8 @@
 		E46F404B1F6B70A700EBCB86 /* elementDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elementDictionary.swift; sourceTree = "<group>"; };
 		E46F404D1F6B70ED00EBCB86 /* elementInforView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elementInforView.swift; sourceTree = "<group>"; };
 		E46F404F1F6B72A600EBCB86 /* elementTabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elementTabelView.swift; sourceTree = "<group>"; };
-		E4C2615E1F74A98300F13B33 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = "../../../../../../Desktop/Flashcards-end-2/Flashcards/Deck.swift"; sourceTree = "<group>"; };
-		E4C2615F1F74A98300F13B33 /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flashcard.swift; path = "../../../../../../Desktop/Flashcards-end-2/Flashcards/Flashcard.swift"; sourceTree = "<group>"; };
+		E4C2615E1F74A98300F13B33 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		E4C2615F1F74A98300F13B33 /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		F066FE1C1F723688006B982F /* Term controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Term controller.swift"; sourceTree = "<group>"; };
 		F066FE1E1F723795006B982F /* DefinitonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */

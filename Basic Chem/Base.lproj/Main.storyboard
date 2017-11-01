@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,8 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z4-iL-pfs">
-                                <rect key="frame" x="430" y="241" width="273" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient5" translatesAutoresizingMaskIntoConstraints="NO" id="Zj4-Ex-wiR">
+                                <rect key="frame" x="0.0" y="-34" width="768" height="1058"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uG-gR-Xmm">
@@ -42,6 +41,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z4-iL-pfs">
+                                <rect key="frame" x="432" y="186" width="273" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -92,12 +95,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="width" secondItem="hPn-rM-eh0" secondAttribute="width" id="0SP-EN-Ckf"/>
-                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="top" secondItem="cVQ-74-KQH" secondAttribute="bottom" id="6k7-Zm-SyU"/>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="centerX" secondItem="q4u-tr-pCh" secondAttribute="centerX" id="0Ux-dg-rnd"/>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="centerY" secondItem="q4u-tr-pCh" secondAttribute="centerY" id="Mou-i0-DAI"/>
                             <constraint firstItem="14h-Pf-aPJ" firstAttribute="height" secondItem="q4u-tr-pCh" secondAttribute="height" id="cP4-Bi-f81"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="14h-Pf-aPJ" secondAttribute="trailing" constant="-20" id="g9u-3F-aDJ"/>
+                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="width" secondItem="q4u-tr-pCh" secondAttribute="width" id="gXH-7g-JdO"/>
                             <constraint firstAttribute="height" secondItem="hPn-rM-eh0" secondAttribute="height" id="k4d-sU-hrL"/>
-                            <constraint firstItem="14h-Pf-aPJ" firstAttribute="leading" secondItem="q4u-tr-pCh" secondAttribute="leadingMargin" constant="-20" id="zaA-KG-01e"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -141,7 +143,7 @@
                                     <segue destination="NMm-cZ-A66" kind="presentation" id="aIV-ds-O2T"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="chemistry menu" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-AQ-miv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-AQ-miv">
                                 <rect key="frame" x="20" y="77" width="728" height="927"/>
                             </imageView>
                         </subviews>
@@ -150,6 +152,7 @@
                             <constraint firstItem="F53-eO-fRc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="3gX-l4-4Mg"/>
                             <constraint firstItem="F53-eO-fRc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="INg-R2-kiT"/>
                             <constraint firstItem="2Mh-AQ-miv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iud-UL-TEQ"/>
+                            <constraint firstItem="2Mh-AQ-miv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kX8-FP-FIm"/>
                             <constraint firstItem="F53-eO-fRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ljV-NR-zka"/>
                             <constraint firstItem="F53-eO-fRc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nHN-FG-pRN"/>
                         </constraints>
@@ -171,23 +174,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gradient-2" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-CT-B5B">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-2" translatesAutoresizingMaskIntoConstraints="NO" id="gN9-CT-B5B">
+                                <rect key="frame" x="0.0" y="-438" width="768" height="1920"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu 2" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-Jt-JDi">
-                                <rect key="frame" x="47" y="0.0" width="675" height="1039"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1000" id="0dR-iu-ALH"/>
-                                    <constraint firstAttribute="width" secondItem="BdX-Jt-JDi" secondAttribute="height" multiplier="675:1000" id="Qnf-c8-qef"/>
-                                </constraints>
+                                <rect key="frame" x="34" y="11" width="683" height="1052"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-je-ZXS">
-                                <rect key="frame" x="241" y="601" width="287" height="268"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="KHB-VQ-saT" kind="presentation" id="OfH-0h-8Em"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9t-in-hdV">
                                 <rect key="frame" x="20" y="28" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,15 +188,23 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="33E-nX-wvm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-je-ZXS">
+                                <rect key="frame" x="232" y="617" width="287" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="KHB-VQ-saT" kind="presentation" id="OfH-0h-8Em"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gN9-CT-B5B" firstAttribute="centerY" secondItem="BdX-Jt-JDi" secondAttribute="centerY" id="7BC-vC-DN7"/>
-                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="centerY" secondItem="NDo-Se-PwY" secondAttribute="centerY" id="8Sw-FT-VgN"/>
-                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="width" secondItem="gN9-CT-B5B" secondAttribute="height" multiplier="675:1024" id="CLw-HI-li3"/>
+                            <constraint firstItem="gN9-CT-B5B" firstAttribute="centerX" secondItem="NDo-Se-PwY" secondAttribute="centerX" id="Gpf-g3-CxR"/>
                             <constraint firstItem="BdX-Jt-JDi" firstAttribute="centerX" secondItem="NDo-Se-PwY" secondAttribute="centerX" id="Hcp-G0-dXf"/>
+                            <constraint firstItem="iJZ-rb-ebZ" firstAttribute="top" secondItem="BdX-Jt-JDi" secondAttribute="bottom" constant="-40" id="NB9-nS-8XM"/>
                             <constraint firstItem="gN9-CT-B5B" firstAttribute="width" secondItem="NDo-Se-PwY" secondAttribute="width" id="a7E-ny-i5U"/>
-                            <constraint firstItem="gN9-CT-B5B" firstAttribute="height" secondItem="NDo-Se-PwY" secondAttribute="height" id="cfL-4k-gzz"/>
+                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="top" secondItem="653-yC-W8x" secondAttribute="bottom" constant="-40" id="m37-sd-spu"/>
+                            <constraint firstItem="BdX-Jt-JDi" firstAttribute="width" secondItem="NDo-Se-PwY" secondAttribute="width" id="xNN-TU-hdk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="3kb-qn-kYf"/>
@@ -322,14 +322,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient3" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-UW-plM">
-                                <rect key="frame" x="33" y="0.0" width="702" height="1024"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu alt" translatesAutoresizingMaskIntoConstraints="NO" id="nY4-uK-Z5R">
-                                <rect key="frame" x="33" y="48" width="666" height="968"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="686" id="OBr-JF-fgw"/>
-                                    <constraint firstAttribute="width" secondItem="nY4-uK-Z5R" secondAttribute="height" multiplier="686:921" id="Xk5-DI-PNh"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSL-1n-w0U">
                                 <rect key="frame" x="69" y="28" width="41" height="30"/>
@@ -339,33 +332,35 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="Gpk-sz-nhX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t0-TS-lVr">
-                                <rect key="frame" x="256" y="213" width="221" height="206"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chemistry menu alt" translatesAutoresizingMaskIntoConstraints="NO" id="nY4-uK-Z5R">
+                                <rect key="frame" x="23" y="-20" width="723" height="1064"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keQ-0s-iHI">
+                                <rect key="frame" x="251" y="618" width="266" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="ZTO-t6-R6S" kind="presentation" id="iFE-Tx-u1v"/>
+                                    <segue destination="gG1-kW-Umq" kind="presentation" id="HMD-Ly-oM0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4I-6n-u8D">
-                                <rect key="frame" x="245" y="632" width="279" height="227"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AV-Qi-FEa">
+                                <rect key="frame" x="259" y="148" width="258" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="gG1-kW-Umq" kind="presentation" id="iMg-Ki-uyq"/>
+                                    <segue destination="ZTO-t6-R6S" kind="presentation" id="RjS-2g-KIc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3WW-UW-plM" firstAttribute="height" secondItem="xya-LW-g6z" secondAttribute="height" id="0hz-3e-4XU"/>
-                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerY" secondItem="3WW-UW-plM" secondAttribute="centerY" id="Dcj-DZ-dlA"/>
-                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="height" secondItem="3WW-UW-plM" secondAttribute="height" id="EL3-Ok-kEh"/>
-                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="width" secondItem="3WW-UW-plM" secondAttribute="height" multiplier="351:512" id="bTR-uH-BW8"/>
-                            <constraint firstItem="3WW-UW-plM" firstAttribute="centerY" secondItem="xya-LW-g6z" secondAttribute="centerY" id="clt-40-Xtw"/>
-                            <constraint firstItem="3WW-UW-plM" firstAttribute="width" secondItem="xya-LW-g6z" secondAttribute="width" id="mcf-EN-MpP"/>
-                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="width" secondItem="3WW-UW-plM" secondAttribute="width" id="pbl-iC-qo1"/>
-                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerY" secondItem="3WW-UW-plM" secondAttribute="centerY" id="pjd-Cd-KAR"/>
-                            <constraint firstItem="3WW-UW-plM" firstAttribute="centerX" secondItem="xya-LW-g6z" secondAttribute="centerX" id="rzm-fh-Vgj"/>
-                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerX" secondItem="3WW-UW-plM" secondAttribute="centerX" id="ukL-bl-0Qx"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="centerY" secondItem="xya-LW-g6z" secondAttribute="centerY" id="5lh-lo-p3F"/>
+                            <constraint firstItem="22S-fO-LlW" firstAttribute="top" secondItem="nY4-uK-Z5R" secondAttribute="bottom" constant="-40" id="GMS-29-MpC"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="width" secondItem="xya-LW-g6z" secondAttribute="width" id="WcT-HO-rSF"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="height" secondItem="xya-LW-g6z" secondAttribute="height" id="eWM-Ik-UrI"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerX" secondItem="xya-LW-g6z" secondAttribute="centerX" id="jGA-Av-cV4"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="top" secondItem="12q-l9-b6g" secondAttribute="bottom" constant="-50" id="p2o-0S-jX4"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="width" secondItem="xya-LW-g6z" secondAttribute="width" id="saP-Vc-8BV"/>
+                            <constraint firstItem="nY4-uK-Z5R" firstAttribute="centerY" secondItem="xya-LW-g6z" secondAttribute="centerY" id="w89-fJ-hBr"/>
+                            <constraint firstItem="3WW-UW-plM" firstAttribute="centerX" secondItem="xya-LW-g6z" secondAttribute="centerX" id="wLp-7N-FgI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Learning Resources" id="Wsx-F7-EBi">
@@ -388,12 +383,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gradient1" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-Q6-dX4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient1" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-Q6-dX4">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="768" id="FPs-OA-8ec"/>
-                                    <constraint firstAttribute="height" constant="1024" id="Kjb-Sl-vX3"/>
-                                </constraints>
                             </imageView>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-I6-jLx">
                                 <rect key="frame" x="71" y="576" width="627" height="358"/>
@@ -405,7 +396,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="NMm-cZ-A66" kind="presentation" id="IVG-KI-Vjf"/>
+                                    <segue destination="NMm-cZ-A66" kind="show" id="JbT-hO-2aH"/>
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-FI-hPl" userLabel="V">
@@ -429,6 +420,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aFL-Q6-dX4" firstAttribute="centerY" secondItem="cbe-ve-vn9" secondAttribute="centerY" id="0hX-Gc-3ST"/>
+                            <constraint firstItem="aFL-Q6-dX4" firstAttribute="centerX" secondItem="cbe-ve-vn9" secondAttribute="centerX" id="8HV-j1-syA"/>
+                            <constraint firstItem="aFL-Q6-dX4" firstAttribute="width" secondItem="cbe-ve-vn9" secondAttribute="width" id="vUg-TU-ObO"/>
+                            <constraint firstItem="aFL-Q6-dX4" firstAttribute="height" secondItem="cbe-ve-vn9" secondAttribute="height" id="zke-ZZ-wng"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="V" destination="lFe-FI-hPl" id="MeY-pV-2Fa"/>
@@ -459,20 +456,161 @@
                                     <segue destination="NMm-cZ-A66" kind="presentation" id="CZk-qp-y4g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUo-hO-yvk">
-                                <rect key="frame" x="-613" y="209" width="4908" height="389"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Chemistry is the scientific discipline involved with compounds composed of atoms, i.e. elements, and molecules, i.e. combinations of atoms: their composition, structure, properties, behavior and the changes they undergo during a reaction with other compounds.[1][2] Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds. There are four types of chemical bonds: covalent bonds, in which compounds share one or more electron(s); ionic bonds, in which a compound donates one or more electrons to another compound to produce ions: cations and anions; hydrogen bonds; and Van der Waals force bonds.
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xyw-bF-XNM">
+                                <rect key="frame" x="69" y="54" width="630" height="4727.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Atoms are the smallest units of matter that still retain the fundamental chemical properties of an element. Much of the study of chemistry, however, involves looking at what happens when atoms combine with other atoms to form compounds. A compound is a distinct group of atoms held together by chemical bonds. Just as the structure of the atom is held together by the electrostatic attraction between the positively charged nucleus and the negatively charged electrons surrounding it, the stability within chemical bonds is also due to electrostatic attractions. To illustrate further, consider the two major types of chemical bonds: covalent bonds and ionic bonds. In covalent bonds, two atoms share electrons, while in ionic bonds, electrons are fully transferred between two atoms so that ions are formed. Let’s consider both types of bonds in detail.
+Covalent bonds and molecules
+A covalent bond is formed when two atoms share electrons. In a covalent bond, the stability of the bond comes from the shared electrostatic attraction between the two positively charged atomic nuclei and the shared, negatively charged electrons between them.
 
-Chemistry occupies an intermediate position in a hierarchy of the sciences by reductive level between physics and biology.[3] It is sometimes called the central science because it provides a foundation for understanding both basic and applied scientific disciplines at a fundamental level.[4] Examples include plant chemistry (botany), the formation of igneous rocks (geology), how atmospheric ozone is formed and how environmental pollutants are degraded (ecology), the properties of the soil on the moon (astrophysics), how medications work (pharmacology), and how to collect DNA evidence at a crime scene (forensics).
+A single, neutral hydrogen atom is shown to the left; a molecule of hydrogen, H2, is shown to the right.
+A neutral hydrogen atom, shown left, contains one electron. Two hydrogen atoms can combine by donating each of their electrons into a single covalent bond, depicted to the right as the area where the gray clouds around each hydrogen atom overlap. In the covalent bond, the electrons are shared between the two hydrogen atoms. When the covalent bond is formed, we no longer have two hydrogen atoms, but a single molecule of hydrogen—H
 
-The history of chemistry represents a time span from ancient history to the present. By 1000 BC, civilizations used technologies that would eventually form the basis of the various branches of chemistry. Examples include extracting metals from ores, making pottery and glazes, fermenting beer and wine, extracting chemicals from plants for medicine and perfume, rendering fat into soap, making glass, and making alloys like bronze. The protoscience of chemistry, alchemy, was unsuccessful in explaining the nature of matter and its transformations. However, by performing experiments and recording the results, alchemists set the stage for modern chemistry. The distinction began to emerge when a clear differentiation was made between chemistry and alchemy by Robert Boyle in his work The Sceptical Chymist (1661). While both alchemy and chemistry are concerned with matter and its transformations, chemists are seen as applying scientific method to their work. Chemistry is considered to have become an established science with the work of Antoine Lavoisier, who developed a law of conservation of mass that demanded careful measurement and quantitative observations of chemical phenomena. The history of chemistry is intertwined with the history of thermodynamics, especially through the work of Willard Gibbs.[5] Chemistry was preceded by its protoscience, alchemy, which is an intuitive but non-scientific approach to understanding the elements, compounds, and their interactions. It was unsuccessful in explaining the nature of matter and its transformations, but by performing experiments and recording the results, alchemists set the stage for modern chemistry. The distinction began to emerge when a clear differentiation between alchemy and chemistry was made by Robert Boyle in 1661: the application of the scientific method in chemistry was the crucial difference.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+When atoms combine to share covalent bonds, the resulting collection of atoms is called a molecule. We can therefore say that a molecule is the simplest unit of a covalent compound. As we will now see, there are a variety of different ways to represent and draw molecules.
+Note: We have just defined a molecule to be any distinct group of atoms bound together with covalent bonds. However, a few teachers and textbooks define a molecule more narrowly. According to this less common definition, a molecule is a group of covalently bound atoms of the same element only. In the rest of this article, we will stick to the broader definition of molecule because it is more common. Therefore, we will be using the terms molecule and covalent compound interchangeably.
+t, would not properly be called a molecule because it contains more than one type of element. By this less common definition, we would have to classify ammonia as a covalent compound, but not a molecule.
+To be safe, you should probably use whatever definitions are provided to you by your teacher and your own textbook, but keep in mind that you might come across another definition.
+Representing molecules: chemical formulas
+Chemical formulas, sometimes also called molecular formulas, are the simplest way of representing molecules. In a chemical formula, we use the elemental symbols from the periodic table to indicate which elements are present, and we use subscripts to indicate how many atoms of each element exist within the molecule. For example, a single molecule of NH
+COOH. The reason for this second type of formula is that the order in which the atoms are written helps to show the structure of the acetic acid molecule—this is sometimes called the condensed structural formula. As such, we can think of CH
+COOH as being like a cross between a chemical formula and a structural formula, which we will consider next.
+Representing molecules: structural formulas
+Chemical formulas only tell us how many atoms of each element are present in a molecule, but structural formulas also give information about how the atoms are connected in space. In structural formulas, we actually draw the covalent bonds shared between atoms. In the last section, we looked at the chemical formula for ammonia, which is NH
+end subscript. The formula on the left gives only a two-dimensional approximation of molecular structure, whereas the formula on the right shows the orientation of atoms in space using dashes going into the plane of the page and wedges coming out of the plane of the page. The two dots on nitrogen in the right formula indicate a lone pair of electrons. Image credit: left, Physique Applique, CC BY-NC-SA 4.0; right, Wikipedia, CC BY-SA 3.0
+From both of these structural formulas, we can see that the central nitrogen atom shares a single covalent bond with each hydrogen atom. Keep in mind, however, that atoms and molecules, just like everything else in the universe, exist in three dimensions—they have length and width, as well as depth. In the structural formula to the left, we are only seeing a two-dimensional approximation of this molecule. However, in the more detailed structural formula on the right, we have a dashed line to indicate that the rightmost hydrogen atom is sitting behind the plane of the screen, while the bold wedge indicates that the center hydrogen is sitting out in front of the plane of the screen. The two dots above nitrogen indicate a lone pair of electrons that are not involved in any covalent bond. We will discuss the significance of these electrons at the end of this section. To help show this three-dimensional shape even more accurately, we can rely on space-filling models as well as ball-and-stick models. Let's consider both of these models for NH
+
+
+A space-filling model and a ball-and-stick model of ammonia.
+A space-filling model, left, and a ball-and-stick model, right, for ammonia, NH
+ Nitrogen atoms are depicted in blue, and hydrogen atoms are depicted in white. Image credit: left, Wikipedia; right, Wikipedia, public domain
+The left-hand image shows the space-filling model for ammonia. The nitrogen atom is depicted as the larger, central blue sphere, and the three hydrogen atoms are depicted as the smaller white spheres off to the sides, which form a kind of tripod. The overall shape of the molecule is a pyramid with nitrogen at the vertex and a triangular base formed by the three hydrogen atoms. As you will learn when you study molecular shapes and molecular geometry, this type of arrangement is known as trigonal pyramidal. The main advantage of the space-filling model is that it gives us a sense of the relative sizes of the different atoms—nitrogen has a larger atomic radius than hydrogen.
+The right-hand image shows us the ball-and-stick model for ammonia. As you might be able to guess, the balls represent the atoms, and the sticks that connect the balls represent the covalent bonds shared between the atoms. The advantage of this type of model is that we get to see the covalent bonds, which also allows us to more easily see the geometry of the molecule.
+[Why are the hydrogen atoms in ammonia pushed downward into a tripod shape?]
+All molecular geometry has to do with electron-electron repulsion. Keep in mind that in space-filling models and in ball-and-stick models, we only show chemical bonds, not lone pairs of electrons. In the case of ammonia, there exists a lone pair of electrons on top of the central nitrogen atom that isn’t pictured in the three-dimensional models—but is pictured in the two-dimensional structural model with the dashes and wedges. These electrons and the electrons around each hydrogen atom repel each other, which pushes the hydrogen atoms down and away, forming a tripod, or three-sided pyramid shape.
+Ions and ion formation
+Now that we have an understanding of covalent bonds, we can begin to discuss the other major type of chemical bond—an ionic bond. Unlike covalent bonds, in which electrons are shared between atoms, an ionic bond is formed when two oppositely charged ions attract one another. To better illustrate this, we first need to examine the structure and formation of ions.
+Recall that neutral atoms have an equal number of protons and electrons. The result of this is that the total positive charge of the protons exactly cancels the total negative charge of the electrons, so that the atom itself has an overall charge, or net charge, of zero.
+However, if an atom gains or loses electrons, the balance between protons and electrons is upset, and the atom becomes an ion—a species with a net charge. Let’s first look at what happens when a neutral atom loses an electron:
+
+The oxidation of sodium.
+A neutral sodium atom, Na, loses one electron to form a cation, Na
++
+​+
+​​ start superscript, plus, end superscript. Image credit: Introduction to Chemistry: General, Organic, and Biological, CC BY-NC-SA 3.0
+In the diagram above, we see a neutral atom of sodium, Na, losing an electron. The result is that the sodium ion, Na
++
+​+
+​​ start superscript, plus, end superscript, has 11 protons, but only 10 electrons. Thus, the sodium ion has a net charge of 1+, and it has become a cation—a positively charged ion.
+Next, we’ll look at the formation of an anion—an ion with a net negative charge.
+
+The reduction of chlorine to chloride.
+A neutral chlorine atom, Cl, gains an electron to form an anion, Cl 
+−
+​−
+​​ start superscript, minus, end superscript. Image credit: Introduction to Chemistry: General, Organic, and Biological, CC BY-NC-SA 3.0
+In this diagram, we see the opposite process of what we saw with the sodium atom. Here, a neutral chlorine atom, Cl, is gaining an electron. The result is that the newly formed chloride ion, Cl
+−
+​−
+​​ start superscript, minus, end superscript, has 17 protons and 18 electrons. Because electrons carry a 1- charge, the net charge on the chloride ion from the extra electron is 1-. It has become an anion, or a negatively charged ion.
+Note: When neutral atoms gain electron(s) to form anions, they are typically named with an -ide suffix. For example, Cl
+−
+​−
+​​ start superscript, minus, end superscript is chloride, Br
+−
+​−
+​​ start superscript, minus, end superscript is bromide, O
+2
+−
+​2−
+​​ start superscript, 2, minus, end superscript is oxide, N
+3
+−
+​3−
+​​ start superscript, 3, minus, end superscript is nitride, etc.
+Ionic bonds
+In the last section, we looked separately at how sodium can lose an electron to form the cation Na
++
+​+
+​​ start superscript, plus, end superscript and at how chlorine can gain an electron to form the anion Cl
+−
+​−
+​​ start superscript, minus, end superscript. In reality, however, this process can occur all in one step when sodium gives its electron away to chlorine! We can illustrate this as follows:
+
+Oxidation and reduction of sodium and chlorine.
+Sodium donates its electron to chlorine to form Na
++
+​+
+​​ start superscript, plus, end superscript and Cl
+−
+​−
+​​ start superscript, minus, end superscript. Image credit: Boundless Learning, CC BY-SA 4.0
+Here, we can see how an electron is transferred from sodium to chlorine in order to form the ions Na
++
+​+
+​​ start superscript, plus, end superscript and Cl
+−
+​−
+​​ start superscript, minus, end superscript. Once these ions are formed, there is a strong electrostatic attraction between them, which leads to the formation of an ionic bond. We can see that one of the major distinguishing factors between ionic bonds and covalent bonds is that in ionic bonds, electrons are completely transferred, whereas in covalent bonds, electrons are shared.
+[Why is the electron transferred from sodium to chlorine, and not the other way around?]
+As you will soon learn, chlorine is far more *electronegative than sodium. This means that chlorine likes electrons far more than sodium does. Sodium, which is hardly electronegative at all, is very happy to give its electron away to chlorine, which happily accepts it.
+Note: As you learn more about bonding, you will see that in actuality, the difference between covalent and ionic bonds is not black and white and that the two types of bonds are actually more like the two ends of a common spectrum. We can think of a pure ionic bond as having a perfectly unequal sharing of electrons, whereas a pure covalent bond has a perfectly equal sharing of electrons. In reality, however, most chemical bonds lie somewhere in between these two cases.
+Drawing ionic bonds
+We will now consider the different ways we can draw or depict ionic bonds. We will continue looking at the most commonly known ionic compound—sodium chloride, which is best known as table salt. A single ionic bond in sodium chloride can be shown as follows:
+
+A sodium chloride ionic bond.
+A structural drawing showing an ionic bond between a sodium cation, Na
++
+​+
+​​ start superscript, plus, end superscript, and a chloride anion, Cl
+−
+​−
+​​ start superscript, minus, end superscript. Note that there is no single line connecting the two ions because that would indicate shared electrons in a covalent bond. Here, electrons have been transferred completely, and the bond is purely ionic. Image credit: Wikispaces, CC BY-SA 3.0
+The positively charged sodium cation and the negatively charged chloride anion like to position themselves next to each other due to their mutual electrostatic attraction. Because no electrons are shared, we don’t depict an ionic bond with a line as we do for covalent bonds. We simply recognize that the attraction is there due to the opposite charge signs on the ions.
+The above diagram, however, is just a model. In nature, sodium chloride does not exist as a single sodium cation bonded with a single chloride anion. As we mentioned earlier, sodium chloride is table salt—and if we were able to use a super-powered microscope that could examine table salt at the atomic level, we would see something like the following structure:
+
+A diagram of the crystal lattice structure for sodium chloride.
+If we were to examine a crystal of sodium chloride at the atomic level, we would see sodium ions and chloride ions evenly positioned next to one another in space. The orderly, stable structure is due to the strong ionic bonds between Na
++
+​+
+​​ start superscript, plus, end superscript and Cl 
+−
+​−
+​​ start superscript, minus, end superscript. Image credit: Introduction to Chemistry: General, Organic, and Biological, CC BY-NC-SA 3.0
+We can see from this diagram that the Na
++
+​+
+​​ start superscript, plus, end superscript and Cl
+−
+​−
+​​ start superscript, minus, end superscript ions naturally position themselves next to one another in space due to the shared electrostatic attractions between them. The ions are then held in place by their very strong ionic bonds. The above structure is known as a crystal lattice, and sodium chloride—like most ionic compounds—is a crystalline solid. You will learn more about this in future lessons on the different types of solids.
+Covalent vs. ionic compounds: molecules vs. formula units
+Now that we’ve discussed the basics of both covalent and ionic bonding, we need to draw a few necessary distinctions. We know that a group of atoms joined by only covalent bonds is known as a molecule. It should be noted, however, that the word molecule should only be used in reference to covalent compounds. In an ionic compound, such as sodium chloride, there is no such thing as a single molecule of sodium chloride since, in reality, sodium chloride is actually made up of multiple sodium and chloride ions joined together in a large crystal lattice—as we saw in the previous diagram. As such, we refer to one piece of NaCl not as a molecule but as a formula unit. Keep in mind that single formula units, unlike single molecules, largely do not exist in nature—we simply rely on formula units for ease of reference and convenience.
+Concept check: Which type of compounds are composed of molecules—ionic or covalent?
+[Show answer.]
+Covalent compounds are composed of molecules.
+Conclusion
+All chemical bonding is due to electrostatic attraction. When atoms combine through chemical bonding, they form compounds—unique structures composed of two or more atoms. The basic composition of a compound can be indicated using a chemical formula. A chemical formula uses symbols from the periodic table to indicate the types of elements present in a particular compound while using subscripts to represent the number of each type of element present.
+Compounds can be covalent or ionic. In covalent compounds, atoms form covalent bonds that consist of electrons shared between two adjacent atomic nuclei. An example of a covalent compound is ammonia. The chemical formula of ammonia is NH
+3
+​3
+​​ start subscript, 3, end subscript, which tells us that in a single molecule of ammonia, there is one nitrogen atom, and three hydrogen atoms. The structure of a covalent compound can be depicted through space-filling models as well as ball-and-stick models.
+In ionic compounds, electrons are completely transferred from one atom to another so that a cation—positively charged ion—and an anion—negatively charged ion—form. The strong electrostatic attraction between adjacent cations and anions is known as an ionic bond. The most common example of an ionic compound is sodium chloride NaCl, better known as table salt. Unlike covalent compounds, there is no such thing as a molecule of an ionic compound. This is because in nature NaCl does not exist in individual units, but in crystal lattice structures that are composed of multiple Na
++
+​+
+​​ start superscript, plus, end superscript and Cl
+−
+​−
+​​ start superscript, minus, end superscript ions alternating in space. The chemical formula NaCl specifies one formula unit of this compound.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xyw-bF-XNM" firstAttribute="leading" secondItem="2gR-51-MRp" secondAttribute="leadingMargin" constant="49" id="G7Q-bJ-QsR"/>
+                            <constraint firstItem="Xyw-bF-XNM" firstAttribute="top" secondItem="nnY-vB-auo" secondAttribute="bottom" constant="34" id="KNN-ug-gf7"/>
+                            <constraint firstItem="Xyw-bF-XNM" firstAttribute="centerX" secondItem="2gR-51-MRp" secondAttribute="centerX" id="Uv8-Rw-z8v"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wU6-ce-fWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -491,10 +629,10 @@ The history of chemistry represents a time span from ancient history to the pres
         <image name="gradient5" width="1440" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GqD-ki-nEC"/>
+        <segue reference="Gpk-sz-nhX"/>
+        <segue reference="JbT-hO-2aH"/>
+        <segue reference="EFh-bp-rNg"/>
+        <segue reference="OfH-0h-8Em"/>
         <segue reference="dN2-OF-wzh"/>
-        <segue reference="CZk-qp-y4g"/>
-        <segue reference="gIh-e6-Jad"/>
-        <segue reference="oLC-K7-49d"/>
     </inferredMetricsTieBreakers>
 </document>

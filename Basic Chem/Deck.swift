@@ -15,17 +15,17 @@ class Deck {
     
     init() {
         let cardData = [
-            "valence electron" : "electrons on outer shell",
-            "acid + metal" : "salt + hydrogen gas",
-            "acid + base" : "water + salt",
-            "acid + carbonate" : "carbon dioxide + water + salt",
-            "avagadro's number" : "6.022 x 10^23",
-            "spectator ions": "ions that exist in the same form on both the reactand and product side of a chemical equation",
-            "Saturated solution": "a solution colntaining the maximum amount of a solute for a given amount of solvent",
-            "solubility" : "the amount of substance that dissolves in a given quantity of solvent",
-            "unsaturated" : "a solution that contains less solute than a saturated solution",
-            "anions":"ions with a negative charge",
-            "what element has the electron configuration 2,8,1" : "Na Sodium"
+            "Valence Electron" : "Electrons On Outer Shell",
+            "Acid + Metal" : "Salt + Hydrogen Gas",
+            "Acid + Base" : "Water + Salt",
+            "Acid + Carbonate" : "Carbon Dioxide + Water + Salt",
+            "Avagadro's Number" : "6.022 X 10^23",
+            "Spectator Ions": "Ions That Exist In The Same Form On Both The Reactand And Product Side Of A Chemical Equation",
+            "Saturated Solution": "A Solution Colntaining The Maximum Amount Of A Solute For A Given Amount Of Solvent",
+            "Solubility" : "The Amount Of Substance That Dissolves In A Given Quantity Of Solvent",
+            "Unsaturated" : "A Solution That Contains Less Solute Than A Saturated Solution",
+            "Anions":"Ions With A Negative Charge",
+            "What Element Has The Electron Configuration 2,8,1" : "Na Sodium"
             
             
         ]
